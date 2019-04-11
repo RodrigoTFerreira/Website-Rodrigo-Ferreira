@@ -336,10 +336,8 @@ svg {
     #container {
         width: 58.33%;
     }
-}
-
-@media only screen and (min-width: 900px) {
      .slideshow-container { display: block;
         /* Colocar propriedade para visualizar o slideshow */
     }
+	
 }
