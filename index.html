@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Estrutura</title>
+   
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript"/>
+    <meta name="author" content="Rui Jesus"/>
+    <meta http-equiv="refresh" content="30"/>
+    <meta charset="UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/Exercicio5.css"/>
+</head>
+<!---Content starts here -->
+
+<body>
+    <header>
+	<a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="#717171"/>
+        </svg>
+    </a>
+    <div id="drawer">
+		<nav class="col-3">
+<a href="#unordered">Unordered List</a>
+<br />
+<a href="#ordered">Ordered List</a>
+<br />
+<a href="#color">Color Codes</a>
+<br />
+<a href="#video">Video</a>
+<br />
+<a href="#table">Table</a>
+</nav>
+        <h1>What is Music?</h1>
+        <p> Music shop sign: "Gone chopin, bach in a minuet." </p>
+        <h4>Interation Design</h4>
+    </header>
+
+    <nav id="tabletPC" class="col-3">
+        <a href="#unordered"> Unordered List</a>
+        <a href="#ordered"> Ordered List</a>
+        <a href="#color"> Color Codes</a>
+        <a href="#video"> Video</a>
+        <a href="#table"> Table</a>
+    </nav>
+
+    <div id="container" class="col-9">
+        <section class="slideshow-container">
+            <h2>HTML Slideshow</h2>
+            <article class="mySlides" class="fade">
+<figure>
+<img src=" imagens/img4.jpg ">
+<figcaption>Figure 1: Running to the concert!</figcaption>
+</figure>
+</article>
+<article class="mySlides" class="fade">
+                <figure>
+                    <img src="imagens/img5.jpg">
+<figcaption>Figure 2: Learning music is too easy...</figcaption>
+</figure>
+</article>
+<article class=" mySlides" class="fade">
+                    <figure>
+                        <img src="imagens/img6.jpg">
+                        <figcaption>Figure 3: Are you having difficulties to tchill? Hear some music!</figcaption>
+                    </figure>
+            </article>
+            <div class="dotpoints">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <a name="unordered">
+                <h2> Unordered List of Instruments </h2>
+                <i>A lot of them can be used for music, doesnt matter wich one, all of them works</i>
+                <ul>
+                    <li> Guitar, </li>
+                    <li> Drums,</li>
+                    <li> Bass,</li>
+                    <li> Sound Mix </li>
+                    <li> Don`t matter actually </li>
+                </ul>
+        </section>
+
+        <section>
+		<section id="csection">
+            <a name="ordered">
+                <h2> Ordered List Tag </h2>
+                <i> Two common ways to start </i>
+                <ol>
+                    <li><u> Buy instruments; </u></li>
+                    <li><u> Youtube channels, see and learn; </u></li>
+                </ol>
+        </section>
+
+        <section>
+            <a name="color">
+                <h2>Color Codes</h2>
+                <p> Information about color tags so you can give a color of your choice to your instruments. </p>
+                <img src="http://www.theodora.com/gif4/html_colors.gif">
+
+                <img src="https://www.thedj.co.uk/wp-content/uploads/2014/07/music-colour-splash.jpg" width="600" height="450">
+                <img src="https://www.thoughtco.com/thmb/ibRsMUGDeErA9OnwaLaOa8Ujw2E=/800x0/filters:no_upscale():max_bytes(150000):strip_icc()/tax2_image_music-58a22d1668a0972917bfb557.png" width="600" height="450">
+        </section>
+
+        <section>
+            <a name="video">
+                <h2> Vídeo </h2>
+                <p> This video is about music (Joe Satriani - Always with me always with you) </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VI57QHL6ge0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+        </section>
+
+        <section>
+            <a name="table">
+                <h2>Table </h2>
+                <table border="1px">
+                    <th colspan="3"> Music </th>
+                    <tr>
+                        <td> Message </td>
+                        <td> Sensation </td>
+                        <td> Rithym </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4"> Message given throw the lyrics </td>
+                        <td rowspan="3"> Sensations felt while listening music </td>
+                        <td> 1º Beat </td>
+                    </tr>
+                    <tr>
+                        <td> 2º Beat </td>
+                    </tr>
+                    <tr>
+                        <td> 3º Beat </td>
+                    </tr>
+                    <tr>
+                        <td> What you want to transmit throw the music </td>
+                        <td> 4º Beat </td>
+                    </tr>
+                </table>
+        </section>
+    </div>
+
+		<aside class="col-2">
+			<h3>Aside songs</h3>
+			<p> Some lyrics with no sound for you to compose! </p>
+		</aside>
+
+    <footer>
+        <h2>Rodrigo F.</h2>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i = null;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+</body>
+
+</html>
