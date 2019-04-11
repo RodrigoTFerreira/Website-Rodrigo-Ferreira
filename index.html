@@ -82,11 +82,10 @@
                     <li> Drums,</li>
                     <li> Bass,</li>
                     <li> Sound Mix </li>
-                    <li> Don`t matter actually </li>
+                    <li> Doesn`t matter actually </li>
                 </ul>
         </section>
 
-        <section>
 		<section id="csection">
             <a name="ordered">
                 <h2> Ordered List Tag </h2>
@@ -176,6 +175,17 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
+		 var menu_icon = document.querySelector('#menu_icon');
+    var container = document.querySelector("#container");
+    var drawer = document.querySelector('#drawer');
+
+    menu_icon.addEventListener('click', function (e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+    });
+    container.addEventListener('click', function () {
+        drawer.classList.remove('open');
+    });
     </script>
 
 </body>
