@@ -128,7 +128,7 @@ nav a:visited {
 
 nav a:hover {
     color: white;
-    background-color: #000000;
+    background-color: #F1F1F1;
 }
 
 section {
@@ -218,7 +218,7 @@ svg {
 
 #drawer {
     display: block;
-    background-color: #000000;
+    background-color: #717171;
     height: 100%;
     width: 60%;
     position: absolute;
